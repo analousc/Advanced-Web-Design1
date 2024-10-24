@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midjourney Interface Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="sidebar">
+            <div class="logo">KMTjourney</div>
+            <ul class="menu">
+                <li><a href="explore.html">Explore</a></li>
+                <li>Create</li>
+                <li>Organize</li>
+                <li>Personalize</li>
+            </ul>
+            <div class="chat">
+                <p>Chat</p>
+                <ul>
+                    <li>General Chaos</li>
+                    <li>Prompt Craft</li>
+                    <li>Daily Theme</li>
+                    <li>Newbies</li>
+                </ul>
+            </div>
+            <div class="tasks">
+                <p>Tasks</p>
+            </div>
+            <div class="settings">
+                <div class="settings-item">
+                    <i class="icon">?</i>
+                    <span>Help</span>
+                </div>
+                <div class="settings-item">
+                    <i class="icon">🔔</i>
+                    <span>Updates</span>
+                </div>
+                <div class="settings-item" onclick="toggleDropdown()">
+                    <i class="icon">🌙</i>
+                    <span>Dark Mode</span>
+                    <div class="dropdown" id="dropdown-menu">
+                        <div class="dropdown-item">🌞 Light Mode</div>
+                        <div class="dropdown-item active">🌙 Dark Mode</div>
+                        <div class="dropdown-item">💻 System (Dark)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="main-content">
+            <div class="header">
+                <input type="text" placeholder="What will you imagine?" />
+                <div class="date">3 Oct 2024</div>
+            </div>
+            <div class="grid">
+             
+                <div class="image-card">
+                    <img src="graphic1.png" alt="Abstract Design 1" />
+                    <p>Picasso style painting</p>
+                </div>
+                <div class="image-card">
+                    <img src="graphic2.png" alt="Abstract Design 2" />
+                    <p>Picasso style painting</p>
+                </div>
+                <div class="image-card">
+                    <img src="graphic3.png" alt="Abstract Design 3" />
+                    <p>Picasso style painting</p>
+                </div>
+                <div class="image-card">
+                    <img src="graphic4.png" alt="Abstract Design 4" />
+                    <p>Animated portrait of man</p>
+                </div>
+                <div class="image-card">
+                    <img src="graphic5.png" alt="Abstract Design 5" />
+                    <p>Animated portrait of man</p>
+                </div>
+                <div class="image-card">
+                    <img src="graphic6.png" alt="Abstract Design 6" />
+                    <p>Animated portrait of man</p>
+                </div>
+                <div class="image-card">
+                    <img src="graphic7.png" alt="Abstract Design 7" />
+                    <p>Andy Warhol style of woman dancing</p>
+                </div>
+                <div class="image-card">
+                    <img src="graphic8.png" alt="Abstract Design 8" />
+                    <p>Andy Warhol style of woman dancing</p>
+                </div>
+                <div class="image-card">
+                    <img src="graphic9.png" alt="Abstract Design 9" />
+                    <p>Andy Warhol style of woman dancing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown-menu');
+            dropdown.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
+

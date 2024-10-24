@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    
+        <div class="sidebar">
+            <div class="logo">KMTjourney</div>
+            <ul class="menu">
+                <li><a href="explore.html">Explore</a></li>
+                <li>Create</li>
+                <li>Organize</li>
+                <li>Personalize</li>
+            </ul>
+            <div class="chat">
+                <p>Chat</p>
+                <ul>
+                    <li>General Chaos</li>
+                    <li>Prompt Craft</li>
+                    <li>Daily Theme</li>
+                    <li>Newbies</li>
+                </ul>
+            </div>
+            <div class="tasks">
+                <p>Tasks</p>
+            </div>
+            <div class="settings">
+                <div class="settings-item">
+                    <i class="icon">?</i>
+                    <span>Help</span>
+                </div>
+                <div class="settings-item">
+                    <i class="icon">🔔</i>
+                    <span>Updates</span>
+                </div>
+                <div class="settings-item" onclick="toggleDropdown()">
+                    <i class="icon">🌙</i>
+                    <span>Dark Mode</span>
+                    <div class="dropdown" id="dropdown-menu">
+                        <div class="dropdown-item">🌞 Light Mode</div>
+                        <div class="dropdown-item active">🌙 Dark Mode</div>
+                        <div class="dropdown-item">💻 System (Dark)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="main-content">
+            <div class="header">
+                <input type="text" placeholder="What will you imagine?" />
+                <div class="date">4 Oct 2024</div>
+            </div>
+            <div class="collage-grid">
+                
+                <div class="collage-image"><img src="image1.png" alt="Collage Image 1"></div>
+                <div class="collage-image"><img src="image2.png" alt="Collage Image 2"></div>
+                <div class="collage-image"><img src="image3.png" alt="Collage Image 3"></div>
+                <div class="collage-image"><img src="image4.png" alt="Collage Image 4"></div>
+                <div class="collage-image"><img src="image5.png" alt="Collage Image 5"></div>
+                <div class="collage-image"><img src="image6.png" alt="Collage Image 6"></div>
+                <div class="collage-image"><img src="image7.png" alt="Collage Image 7"></div>
+                <div class="collage-image"><img src="image8.png" alt="Collage Image 8"></div>
+                <div class="collage-image"><img src="image9.png" alt="Collage Image 9"></div>
+                <div class="collage-image"><img src="image10.png" alt="Collage Image 10"></div>
+                <div class="collage-image"><img src="image11.png" alt="Collage Image 11"></div>
+                <div class="collage-image"><img src="image12.png" alt="Collage Image 12"></div>
+                <div class="collage-image"><img src="image13.png" alt="Collage Image 13"></div>
+                <div class="collage-image"><img src="image14.png" alt="Collage Image 14"></div>
+                <div class="collage-image"><img src="image15.png" alt="Collage Image 15"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown-menu');
+            dropdown.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
